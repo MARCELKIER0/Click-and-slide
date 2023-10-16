@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Sliding Puzzle</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="index.js" defer></script>
+    <style>
+
+        #tiles {
+            width: 900px;
+            margin: 0 auto;
+            position: relative;
+            background-color: white;
+            padding: 8px;
+            border-radius: 0.5rem;
+        }
+        
+        .selected {
+            background-color: #252525;
+            border: none;
+            color: white;
+        }
+        
+        .btn {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="button">
+        <button onclick="changeVal(2)">2x2</button>
+        <button onclick="changeVal(3)">3x3</button>
+        <button onclick="changeVal(4)">4x4</button>
+        <button onclick="changeVal(5)">5x5</button>
+    </div>
+
+    <div id="tiles">
+    </div>
+</body>
+</html>
+
